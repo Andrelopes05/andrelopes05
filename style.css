@@ -1,0 +1,414 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Poppins", sans-serif;
+}
+.pagina1 {
+    min-height: 100vh;
+    background: url(436d56f2-5495-41d9-90ba-ca65026b205c.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: left;
+}
+.headerpag1 {   
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+
+}
+
+.navbar a{
+    position: relative;
+    font-size: 19px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: .3s;
+}
+.navbar a:hover::before {
+    width: 100%;
+}
+nav a:hover{
+    font-size: 24px;
+}
+
+.pagina2 {
+    min-height: 100vh;
+    background: url('89787.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+.navbar1 a{
+    position: relative;
+    font-size: 19px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+    
+}
+
+.navbar1 a::before {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: .3s;
+    justify-content: center;
+}
+.navbar1 a:hover::before {
+    width: 100%;
+}
+.nav1 a:hover{
+    font-size: 24px;
+}
+.headerpag2 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: black;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    text-align: center;
+    font-size: 15px;
+}
+
+div,.bodyicons{
+    place-items: center;
+    display: grid;
+    height: 100%;
+  }
+  .icons{
+    display: flex;
+  }
+  .icons a{
+    margin: 0 25px;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    position: relative;
+    text-align: center;
+  }
+  .icons a .layer{
+    width: 55px;
+    height: 55px;
+    transition: transform 0.3s;
+  }
+  .icons a:hover .layer{
+    transform: rotate(-35deg) skew(20deg);
+  }
+  .icons a .layer span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    transition: all 0.3s;
+  }
+  .icons a .layer span.fab{
+    font-size: 30px;
+    line-height: 55px;
+    text-align: center;
+  }
+  .icons a:hover .layer span:nth-child(1){
+    opacity: 0.2;
+  }
+  .icons a:hover .layer span:nth-child(2){
+    opacity: 0.4;
+    transform: translate(5px, -5px);
+  }
+  .icons a:hover .layer span:nth-child(3){
+    opacity: 0.6;
+    transform: translate(10px, -10px);
+  }
+  .icons a:hover .layer span:nth-child(4){
+    opacity: 0.8;
+    transform: translate(15px, -15px);
+  }
+  .icons a:hover .layer span:nth-child(5){
+    opacity: 1;
+    transform: translate(20px, -20px);
+  }
+  .icons a:nth-child(1) .layer span,
+  .icons a:nth-child(1) .text{
+    color: #4267B2;
+    border-color: #4267B2;
+  }
+  .icons a:nth-child(2) .layer span,
+  .icons a:nth-child(2) .text{
+    color: #1DA1F2;
+    border-color: #1DA1F2;
+  }
+  .icons a:nth-child(3) .layer span,
+  .icons a:nth-child(3) .text{
+    color: #E1306C;
+    border-color: #E1306C;
+  }
+  .icons a:nth-child(4) .layer span,
+  .icons a:nth-child(4) .text{
+    color: #2867B2;
+    border-color: #2867B2;
+  }
+  .icons a:nth-child(5) .layer span,
+  .icons a:nth-child(5) .text{
+    color: #ff0000;
+    border-color: #ff0000;
+  }
+  .icons a:hover:nth-child(1) .layer span{
+    box-shadow: -1px 1px 3px #4267B2;
+  }
+  .icons a:hover:nth-child(2) .layer span{
+    box-shadow: -1px 1px 3px #1DA1F2;
+  }
+  .icons a:hover:nth-child(3) .layer span{
+    box-shadow: -1px 1px 3px #E1306C;
+  }
+  .icons a:hover:nth-child(4) .layer span{
+    box-shadow: -1px 1px 3px #2867B2;
+  }
+  .icons a:hover:nth-child(5) .layer span{
+    box-shadow: -1px 1px 3px #ff0000;
+  }
+  .icons a .text{
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    opacity: 0;
+    font-weight: 500;   
+    transform: translateX(-50%);
+    transition: bottom 0.3s ease, opacity 0.3s ease;
+  }
+  .icons a:hover .text{
+    bottom: -35px;
+    opacity: 1;
+  }
+.imgI{
+    width: 55px;
+    border-radius: 100px;
+  }
+
+.André{
+    width: 350px;
+    border-radius: 30px;
+    border: solid blanchedalmond;
+    filter: grayscale(1);
+}
+.André:hover{
+  filter: grayscale(0%);
+}
+.divfoto{
+    text-align: center;
+}
+h1{
+    font-size: 40px;
+    color: white;
+}
+p{
+    color: white;
+}
+h4{
+    color: blanchedalmond;
+}
+.h1center{
+    text-align: center;
+}
+.sobre{
+    padding: 200px;
+    font-size: 25px;
+}
+
+.conteinerlazer{
+    margin: 80px 0 0 260px;
+    width: 70%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.conteinerlazer img{
+    width: 10%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: all ease-in-out 0.5s;
+}
+.conteinerlazer img:hover{
+    width: 25%
+}
+
+.bodylazer{
+    background: url(anime-boy-chill-digital-art-4k-wallpaper-uhdpaper.com-284@0@j.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.lazeres{
+  text-align: center;
+  text-shadow:0px 0px 10px blanchedalmond,
+              0px 0px 20px blanchedalmond,
+              0px 0px 40px blanchedalmond,
+              0px 0px 80px blanchedalmond;
+}
+.bodyE {
+  min-height: 100vh;
+  background: url(436d56f2-5495-41d9-90ba-ca65026b205c.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: left;
+}
+
+.container {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.wrapperE {
+    position: relative;
+    width: 1160px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transform-style: preserve-3d;
+    perspective: 500px;
+}
+
+.wrapperE .box {
+    position: relative;
+    width: 275px;
+    height: 275px;
+    margin-right: 15px;
+    margin-top: 10px;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    background-color: #000;
+    transition: all 0.5s ease;
+}
+
+.wrapperE:hover .box {
+    transform: rotateY(25deg);
+}
+
+.wrapperE .box:hover~.box {
+    transform: rotateY(-25deg);
+}
+
+.wrapperE .box:hover {
+    z-index: 1;
+    transform: rotateY(0deg) scale(1.25);
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
+}
+
+.wrapperE .box .image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapperE .box .image-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    mix-blend-mode: multiply;
+    backdrop-filter: blur(2px);
+    transition: all 0.5s ease;
+    
+}
+
+.wrapperE .box:hover .image-container:before {
+    opacity: 1;
+}
+
+.wrapperE .box .image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wrapperE .box .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    padding: 20px;
+    align-items: flex-end;
+    box-sizing: border-box;
+}
+
+.wrapperE .box .content h2 {
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    transform: translateY(200px);
+    transition: all 0.5s ease;
+    transition-delay: 0.1s;
+}
+
+.wrapperE .box:hover .content h2 {
+    transform: translateY(0px);
+}
+
+.wrapperE .box .content p {
+    color: #fff;
+    font-size: 14px;
+    transition: all 0.5s ease;
+    transform: translateY(200px);
+    transition-delay: 0.25s;
+}
+
+.wrapperE .box:hover .content p {
+    transform: translateY(0px);
+} 
+
